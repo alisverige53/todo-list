@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgb(135, 218, 148);
+    color: rgb(8, 8, 8);
+    padding: 0;
+    border: none;
+    border-radius: 50%; /* Make the button round */
+    cursor: pointer;
+    font-size: 30px;
+    width: 50px; /* Ensure width is equal to height */
+    height: 50px; /* Height is equal to width for a perfect circle */
+    display: inline-flex;
+    justify-content: center; /* Center the "+" sign */
+    align-items: center; /* Center the "+" sign */
+    margin-left: 10px; /* Add some margin for spacing */
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+
