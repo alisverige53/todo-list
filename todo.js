@@ -57,11 +57,10 @@ function getTasksFromLocalStorage() {
 // Update task status in LocalStorage
 function updateTaskStatus(taskText, isCompleted) {
     let tasks = getTasksFromLocalStorage();
-    tasks = tasks.map(task => {
+    tasks.forEach(task => {
         if (task.text === taskText) {
-            return { ...task, completed: isCompleted };
+            task.completed = isCompleted; 
         }
-        return task;
     });
     localStorage.setItem('todo-tasks', JSON.stringify(tasks));
 }
